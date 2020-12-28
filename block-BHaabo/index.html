@@ -1,0 +1,116 @@
+<!-- 
+- Create a page using flexbox according to the layout shown below.
+
+![Flex Shrink Property](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/flexbox/ex-2.png)
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox- Assignment Level II - Blog Dashboard</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/stylesheet/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4633904374.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container flex">
+        <a class="brand" href=""
+          ><img src="./assets/media/icons/altcampus-logo.svg" alt="Brand Logo"
+        /></a>
+        <div class="header-menu flex">
+          <img src="./assets/media/icons/bell.svg" alt="Bell Icon" />
+          <p>Sarah Jone</p>
+          <img src="./assets/media/icons/user.svg" alt="User Icon" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container flex">
+          <aside class="flex">
+            <nav class="aside-nav">
+              <div class="nav-container flex">
+                <img
+                  src="./assets/media/icons/dashboard.svg"
+                  alt="Dashboard Icon"
+                />
+                <p>Dashboard</p>
+              </div>
+              <div class="nav-container flex active">
+                <img
+                  src="./assets/media/icons/article.svg"
+                  alt="Dashboard Icon"
+                />
+                <p>Aricles</p>
+              </div>
+              <div class="nav-container flex">
+                <img
+                  src="./assets/media/icons/analytics.svg"
+                  alt="Dashboard Icon"
+                />
+                <p>Analytics</p>
+              </div>
+              <div class="nav-container flex">
+                <img
+                  src="./assets/media/icons/inbox.svg"
+                  alt="Dashboard Icon"
+                />
+                <p>Inbox</p>
+              </div>
+              <div class="nav-container flex">
+                <img
+                  src="./assets/media/icons/setting.svg"
+                  alt="Dashboard Icon"
+                />
+                <p>Settings</p>
+              </div>
+            </nav>
+            <div class="logout-btn flex">
+              <img src="./assets/media/icons/log-out.svg" alt="Logout Button" />
+              <p>Logout</p>
+            </div>
+          </aside>
+          <article>
+            <img src="./assets/media/photos/01.png" alt="" />
+            <h1 class="heading">Why we are doing AltCampus?</h1>
+            <p class="text">
+              AltCampus is an alternative to college that you wish existed.
+              Currently, we are offering an in-house, 6-month long program to
+              train people in quality software development, where they don't
+              have to pay anything until they are hired.
+            </p>
+            <p class="text">
+              We live in the world of digital skills. These skills are always
+              evolving and so is their demand. Students/Professionals who are
+              not responsive to the changes in industry demands, in terms of
+              skills, will have a hard time surviving, well at least
+              flourishing.
+            </p>
+            <a href="" class="read-more">Read More</a>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container flex">
+        <small>&copy;AltCampus</small>
+        <nav>
+          <a href=""><i class="fab fa-facebook-square"></i></a>
+          <a href=""><i class="fab fa-twitter-square"></i></a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
