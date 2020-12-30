@@ -1,0 +1,177 @@
+<!-- 
+- Create a page using flexbox according to the layout shown below.
+
+![Flex Shrink Property](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/flexbox/ex-3.png)
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox- Assignment Level 3: Prism Layout</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/stylesheet/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4633904374.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container flex">
+        <span class="logo">Prism</span>
+        <nav class="nav">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Generic</a>
+          <a href="#">Elements</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container flex">
+          <article class="main-article">
+            <h1 class="main-heading">Welcome to Prism, a free responsive site template by TEMPLATED</h1>
+          </article>
+          <article class="main-article-body">
+            <p class="body-text">
+              Lorem ipsum nisl sed cursus magna et amet veroeros. Phasellus aliquam
+              et tempus lorem dolor feugiat adipiscing lorem.
+            </p>
+            <button class="btn main-btn">GET STARTED</button>
+        </div>
+        </article>
+      </section>
+      <section class="secondary">
+        <div class="container flex">
+          <article class="secondary-article">
+            <h2 class="secondary-heading">Magna feugiat adipiscing</h2>
+            <p class="secondary-text">Lorem ipsum nisl sed cursus magna et amet veroeros. Sed phasellus aliquam et tempus lorem feugiat adipiscing lorem. Morbi pharetra vitae felis placerat pharetra. Nulla risus orci, dapibus id malesuada et nec, malesuada quis orci. Pellentesque eget consequat.</p>
+            <a href="" class="secondary-btn">LEARN MORE</a>
+          </article>
+          <article class="features">
+            <div class="feature-item">
+              <span class="check-mark">&#10004;</span>
+              <span>Ipsum nisl sed cursus magna</span>
+            </div>
+            <div class="feature-item">
+              <span class="check-mark">&#10004;</span>
+               <span>Amet veroeros sed aliquam consequat</span>
+            </div>
+            <div class="feature-item">
+              <span class="check-mark">&#10004;</span>
+              <span>Tempus lorem adipiscing et lorem
+              </span>
+            </div>
+            <div class="feature-item">
+              <span class="check-mark">&#10004;</span>
+              <span>Morbi pharetra vitae felis placerat
+              </span>
+            </div>
+            <div class="feature-item">
+              <span class="check-mark">&#10004;</span> 
+              <span>Pharetra nulla risus orci dapibus</span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container">
+          <article class="blog-article flex"> 
+            <div class="blog-img-container">
+              <img src="./assets/pic01.jpg" alt="sky scrappers" class="blog-img">
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-heading">Ipsum pharetra tempus</h3>
+              <p class="blog-text">Lorem ipsum nisl sed cursus magna et amet veroeros. Sed phasellus malesuada quis orci. Pellentesque eget consequat.</p>
+              <a href="" class="blog-btn">DETAILS</a>
+            </div>
+          </article>
+          <article class="blog-article flex"> 
+            <div class="blog-img-container">
+              <img src="./assets/pic02.jpg" alt="sky scrappers" class="blog-img">
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-heading">Magna consequat felis</h3>
+              <p class="blog-text">Lorem ipsum nisl sed cursus magna et amet veroeros. Sed phasellus malesuada quis orci. Pellentesque eget consequat.</p>
+              <a href="" class="blog-btn">DETAILS</a>
+            </div>
+          </article>
+          <article class="blog-article flex"> 
+            <div class="blog-img-container">
+              <img src="./assets/pic03.jpg" alt="sky scrappers" class="blog-img">
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-heading">Vitae placerat adipiscing</h3>
+              <p class="blog-text">Lorem ipsum nisl sed cursus magna et amet veroeros. Sed phasellus malesuada quis orci. Pellentesque eget consequat.</p>
+              <a href="" class="blog-btn">DETAILS</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="large-btn">
+        <div class="container">
+          <a href="" class="blog-btn">IPSUM MAGNA TEMPUS</a>
+        </div>
+      </section>
+      <section class="contact secondary">
+        <div class="container flex">
+          <article class="contact-form">
+            <h2 class="secondary-heading">Orci malesuada
+            </h2>
+            <p class="secondary-text">Morbi pharetra vitae felis placerat pharetra. Nulla risus orci, dapibus id malesuada et nec, malesuada quis pellentesque eget.</p>
+            <form action="">
+              <div class="input-field-container flex">
+                <div class="input-field">
+                  <input type="text" name="name" placeholder="Name">
+                </div>
+                <div class="input-field">
+                  <input type="text" name="email" placeholder="Email">
+                </div>
+              </div>
+              <textarea name="message" id="message" class="message" placeholder="Message.." class="message">
+  
+              </textarea>
+              <a href="" class="blog-btn">SEND MESSAGE</a>
+            </form>
+          </article>
+          <article class="socials">
+            <a href="#">
+              <i class="fab fa-twitter"></i><span>twitter.com/untitled-tld</span>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+              <span>facebook.com/untitled-tld</span> 
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+              <span> instagram.com/untitled-tld</span></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-envelope"></i>
+              <span> information@untitled.tld</span> 
+            </a>
+            <a href="#">
+              <i class="fas fa-home"></i>
+              <span> 1234 Somewhere Road Suite 9823 <br>Nashville, TN 00000-0000</span> 
+                
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <small>&copy; Untitled. All rights reserved. Images: Unsplash. Design: TEMPLATED.</small>
+      </div>
+    </footer>
+  </body>
+</html>
